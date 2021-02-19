@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    font-size: 20px;
+    outline: none;
+}
+body{
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);}
+
+
+.calculator{
+    justify-content: center;
+    border-radius: 5px;
+    height: 42a0px;
+    width: 250px;
+    overflow: hidden;
+    margin : 5rem auto;
+    padding:  1rem 0.4rem ;
+    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+}
+
+.display{
+    font-family: 'Oswald', sans-serif;
+    height: 65px;
+    text-align: right;
+    align-items: center;
+    padding : 20px 10px;
+    margin-bottom: 1rem;
+    background: #ffffff;
+    border: 1px solid rgb(163, 143, 143);
+    box-shadow: inset 0 0 3px #000000;
+    border-radius: 5px;
+}
+
+.keyboard{
+    height: 350px;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+    text-align: center;
+    vertical-align: center;
+}
+.cBox{
+    border: 1px solid rgb(163, 143, 143);
+    justify-content: center;
+    align-items: center;  
+    border-radius: 5px; 
+    background: #ffffff;
+    cursor: pointer;
+}
+.cBox:hover{
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+}
+#zero {
+    grid-column: 1 / 3 ;
+}
+#del, #clear{
+    background: #CB356B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: #ffffff;
+}
+#divide, #multiply , #subtrack , #add{
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    font-weight: 200;
+}
+#equal{
+    grid-column: 4;
+    grid-row : 4 / 6;
+    background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+}
